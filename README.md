@@ -10,7 +10,7 @@ Linux toolkit for **syscall-level tracing, injection, sandboxing, and ELF execut
 -  **Manual Linux Sandbox** – Spawn processes in isolated namespaces (`PID`, `USER`, `MOUNT`, etc.) using `clone()`
 -  **Minimal Container Runtime** – Chroot, UID drop, mount isolation, `proc` remount
 -  *(WIP)* **ELF Loader** – Manually parse and map ELF64 binaries using `mmap()` and `exec()` them without `execve`
--  **All written in raw C** – No libc dependencies for core internals, works close to the metal
+-  **All written in raw C** – No libc dependencies for core internals, works close to the metal.
 
 ---
 
