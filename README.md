@@ -1,8 +1,8 @@
-An advanced low-level Linux toolkit for **syscall-level tracing, injection, sandboxing, and ELF execution**
+Linux toolkit for **syscall-level tracing, injection, sandboxing, and ELF execution**
 
 ---
 
-# Features
+## Features
 -  **Syscall Tracer** – Trace and log syscalls with arguments + return values using `ptrace()`
 -  **Live Syscall Injector** – Rewrite syscall IDs and arguments on the fly (e.g., block `execve`, spoof `open()`)
 -  **Syscall Name Mapper** – Decode raw syscall numbers to human-readable names (x86_64)
@@ -14,18 +14,19 @@ An advanced low-level Linux toolkit for **syscall-level tracing, injection, sand
 
 ---
 
-## build & Run
+### build & Run
 
 Requires Linux, x86_64, and root privileges for some features
 
 ### Build All
 
 ```bash
-make
+### make
 gcc -Wall -o syscall_tracer syscall_tracer.c
 gcc -Wall -o sandbox sandbox.c
 gcc -Wall -o seccomp_test seccomp_test.c
 
+--
 
 ### Run Syscall Tracer
 sudo ./syscall_tracer /bin/ls
